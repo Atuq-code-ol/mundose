@@ -8,9 +8,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@us-east-2
+    - uses: actions/checkout@v3
     - name: Configurar credenciales de AWS
-      uses: AWS_ACCESS_KEY_ID/AWS_SECRET_ACCESS_KEY@us-east-2
+      uses: AWS_ACCESS_KEY_ID/AWS_SECRET_ACCESS_KEY@v1
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
